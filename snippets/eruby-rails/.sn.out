@@ -1,0 +1,174 @@
+conf.snippet
+----------
+<% content_for :${1:yield_label_in_layout} do -%>
+	${2}
+<% end -%>
+
+cs.snippet
+----------
+<%= collection_select <+object+>, <+method+>, <+collection+>, <+value_method+>, <+text_method+><+, <+[options]+>, <+[html_options]+>+> %>
+
+ct.snippet
+----------
+<%= content_tag '${1:DIV}', ${2:content}${3:,options} -%>
+
+end.snippet
+----------
+<% end -%>
+
+ffcb.snippet
+----------
+<%= ${1:f}.check_box :${2:attribute} %>
+
+ffe.snippet
+----------
+<% error_messages_for :${1:model} -%>
+
+<% form_for @${2:model} do |f| -%>
+	${3}
+<% end -%>
+
+ffff.snippet
+----------
+<%= ${1:f}.file_field :${2:attribute} %>
+
+ffhf.snippet
+----------
+<%= ${1:f}.hidden_field :${2:attribute} %>
+
+ffl.snippet
+----------
+<%= ${1:f}.label :${2:attribute}, '${3:$2}' %>
+
+ffpf.snippet
+----------
+<%= ${1:f}.password_field :${2:attribute} %>
+
+ffrb.snippet
+----------
+<%= ${1:f}.radio_button :${2:attribute}, :${3:tag_value} %>
+
+ff.snippet
+----------
+<% form_for @${1:model} do |f| -%>
+	${2}
+<% end -%>
+
+ffs.snippet
+----------
+<%= ${1:f}.submit "${2:submit}" %>
+
+ffta.snippet
+----------
+<%= ${1:f}.text_area :${2:attribute} %>
+
+fftf.snippet
+----------
+<%= ${1:f}.text_field :${2:attribute} %>
+
+fields.snippet
+----------
+<% fields_for :${1:model}, @$1 do |${2:f}| -%>
+	${3}
+<% end -%>
+
+for.snippet
+----------
+<% for ${2:item} in ${1:list} -%>
+	${3}
+<% end -%>
+
+ft.snippet
+----------
+<% form_tag(<+:action => "<+update+>"+><+, {:<+class+> => "<+form+>"}+>) do -%>
+  <++>
+<% end -%>
+
+i18.snippet
+----------
+I18n.t('${1:type.key}')${2}
+
+it.snippet
+----------
+<%= image_tag "${1}"${2} %>
+
+jit.snippet
+----------
+<%= javascript_include_tag <+:all+><+, :cache => <+true+>+> %>
+
+jsit.snippet
+----------
+<%= javascript_include_tag "${1}" %>
+
+liai.snippet
+----------
+<%= link_to "<+link text+>", :action => "<+edit+>", :id => <+@<+item+>+> %>
+
+lia.snippet
+----------
+<%= link_to "${1:link text}", :action => "${2:index}" %>
+
+licai.snippet
+----------
+<%= link_to "<+link text+>", :controller => "<+items+>", :action => "<+edit+>", :id => <+@<+item+>+> %>
+
+lica.snippet
+----------
+<%= link_to "${1:link text}", :controller => "${2:items}", :action => "${3:index}" %>
+
+lic.snippet
+----------
+<%= link_to "${1:link text}", :controller => "${2:items}" %>
+
+lim.snippet
+----------
+<%= link_to <+model+>.<+name+>, <+<+model+>_path(<+model+>)+> %>
+
+linpp.snippet
+----------
+<%= link_to <+"<+link text+>"+>, <+<+parent+>_<+child+>_path(<+@+><+parent+>)+> %>
+
+linp.snippet
+----------
+<%= link_to <+"<+link text+>"+>, <+<+parent+>_<+child+>_path(<+@+><+parent+>, <+@+><+child+>)+> %>
+
+lipp.snippet
+----------
+<%= link_to <+"<+link text+>"+>, <+<+model+>s_path+> %>
+
+lip.snippet
+----------
+<%= link_to <+"<+link text+>"+>, <+<+model+>_path(<+@+><+instance+>)+> %>
+
+lt.snippet
+----------
+<%= link_to "${1:name}", ${2:dest} %>
+
+ofcfs.snippet
+----------
+<%= options_from_collection_for_select <+collection+>, <+value_method+>, <+text_method+><+, <+[selected_value]+>+> %>
+
+rf.snippet
+----------
+<%= render :file => "${1:file}"${2} %>
+
+rp.snippet
+----------
+<%= render :partial => "${1:file}"${2} %>
+
+rt.snippet
+----------
+<%= render :template => "${1:file}"${2} %>
+
+slt.snippet
+----------
+<%= stylesheet_link_tag <+:all+><+, :cache => <+true+>+> %>
+
+sslt.snippet
+----------
+<%= stylesheet_link_tag "${1}" %>
+
+st.snippet
+----------
+<%= submit_tag "<+Save changes+>"<+, :id => "<+submit+>"+><+, :name => "<+submit+>"+><+, :class => "<+form_name+>"+><+, :disabled => <+false+>+><+, :disable_with => "<+Please wait+>"+> %>
+

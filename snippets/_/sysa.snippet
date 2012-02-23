@@ -1,0 +1,4 @@
+openlog( "platform", LOG_PID, LOG_USER );
+syslog( LOG_INFO, "{1:log}",{2:arguments});
+closelog();
+
